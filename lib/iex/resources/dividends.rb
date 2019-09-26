@@ -10,7 +10,8 @@ module IEX
       property 'currency'
       property 'description'
       property 'frequency'
-
+      property 'flag'
+      
       def initialize(data)
         super
         # TODO: require Hashie >= 2.5.8, see https://github.com/intridea/hashie/pull/457
