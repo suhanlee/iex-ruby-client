@@ -6,7 +6,7 @@ module IEX
 					IEX::Resources::Convert.new(data)
 				end
 			rescue Faraday::ResourceNotFound => e
-				raise IEX::Errors::SymbolNotFoundError.new(symbol, e.response[:body])
+				raise IEX::Errors::ClientError.new(e.response[:body])
 			end
 		end
 	end
