@@ -26,6 +26,8 @@ module IEX
       property 'delayed_price_time', from: 'delayedPriceTime' # time of the delayed market price
       property 'extended_price', from: 'extendedPrice' # ?
       property 'extended_price_time', from: 'extendedPriceTime' # ?
+      property 'extended_change', from: 'extendedChange'
+      property 'extended_change_percent', from: 'extendedChangePercent'
       property 'previous_close', from: 'previousClose' # adjusted close price of the last trading day of the stock
       property 'change' # change in value, calculated using calculation_price from previous_close
       property 'change_percent', from: 'changePercent' # change in percent, calculated using calculation_price from previous_close
